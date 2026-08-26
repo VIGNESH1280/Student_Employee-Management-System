@@ -1,0 +1,14 @@
+.app {
+  min-height: 100vh;
+  background-color: #f4f6ff;
+}
+
+.heading {
+  margin: 0;
+  padding: 25px 20px;
+  text-align: center;
+  background-color: white;
+  color: #3730a3;
+  font-size: 28px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}

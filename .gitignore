@@ -1,0 +1,6 @@
+node_modules/
+.env
+dist/
+Backend.txt
+Frontend.txt
+Rough.txt

@@ -1,0 +1,35 @@
+.navbar {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 40px;
+  background-color: #4f46e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  color: white;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.link:hover {
+  background-color: #6366f1;
+}
