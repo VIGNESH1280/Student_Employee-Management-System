@@ -1,7 +1,7 @@
 import express from "express";
 import User from "../models/user.model.js";
 import { generateToken } from "../middleware/auth.middleware.js"
-
+import { auth } from "../middleware/auth.middleware.js";
 const router = express.Router();
 
 // SignUp  [Create User]
@@ -35,9 +35,7 @@ router.post("/register", async (req, res) => {
 
 
 
-// SignIn 
 // SignIn [Login User]
-
 router.post("/login", async (req, res) => {
   const { email, password } = req.body;
 
@@ -89,6 +87,29 @@ router.post("/login", async (req, res) => {
 
 
 
+//Get user details by ID
+router.post("/userdetail", auth, async (req, res) => {
+  const { id } = req.body
+  try {
+    const user = await User.findById(id);
+    res.status(200).json(user);
+  } catch (error) {
+    res.status(500).json({
+      message: "Internal Server Error",
+    });
+  }
+});
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -105,13 +126,7 @@ router.get("/", (req, res) => {
   }
 });
 
-//Get one user
-router.get("/:userId", (req, res) => {
-  try {
-  } catch (error) {
-    console.log(error);
-  }
-});
+
 
 //Update user
 router.patch("/:userId", (req, res) => {

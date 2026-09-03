@@ -18,6 +18,10 @@ const Navbar = () => {
         <NavLink to="/signin" className={styles.link}>
           Sign In
         </NavLink>
+
+        <NavLink to="/users" className={styles.link}>
+          GetUsers
+        </NavLink>
       </div>
     </nav>
   );
