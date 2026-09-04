@@ -88,7 +88,7 @@ router.post("/login", async (req, res) => {
 
 
 //Get user details by ID
-router.post("/userdetail", auth, async (req, res) => {
+router.post("/userdetail", async (req, res) => {
   const { id } = req.body
   try {
     const user = await User.findById(id);
