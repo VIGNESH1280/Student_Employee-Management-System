@@ -1,7 +1,14 @@
 import { NavLink } from "react-router-dom";
 import styles from "./Navbar.module.css";
 
+import { useContext } from "react";
+import AuthContext from "./context/AuthContext.jsx";
+
 const Navbar = () => {
+  const { user } = useContext(AuthContext);
+  console.log("User in Navbar:", user);
+
+
   return (
     <nav className={styles.navbar}>
       <div className={styles.logo}>MyApp</div>
