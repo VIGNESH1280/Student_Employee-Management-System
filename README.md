@@ -25,6 +25,7 @@ The project focuses on building a clean **React frontend** connected to a struct
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - React.js
 - Vite
 - React Router DOM
@@ -33,6 +34,7 @@ The project focuses on building a clean **React frontend** connected to a struct
 - JavaScript
 
 ### Backend
+
 - Node.js
 - Express.js
 - MongoDB
@@ -92,11 +94,11 @@ MongoDB Atlas
 
 ## 🔌 API Endpoints
 
-| Method | Endpoint | Description |
-|---|---|---|
-| `POST` | `/users/register` | Register a new user |
-| `POST` | `/users/login` | Authenticate user |
-| `GET` | `/users/userdetail` | Retrieve authenticated user details |
+| Method | Endpoint            | Description                         |
+| ------ | ------------------- | ----------------------------------- |
+| `POST` | `/users/register`   | Register a new user                 |
+| `POST` | `/users/login`      | Authenticate user                   |
+| `GET`  | `/users/userdetail` | Retrieve authenticated user details |
 
 ---
 
@@ -170,7 +172,7 @@ JWT verification
 
 ## 👨‍💻 Author
 
-**C. Vignesh**
+**Vignesh C**
 
 M.E. Computer Science & Engineering — Networks
 
