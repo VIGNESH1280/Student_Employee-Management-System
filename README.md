@@ -176,8 +176,6 @@ JWT verification
 
 M.E. Computer Science & Engineering — Networks
 
-**Interests:** Full-Stack Development • Backend Development • MERN Stack • Computer Networks
-
 ---
 
 ⭐ **If you find this project useful, consider giving it a star!**
